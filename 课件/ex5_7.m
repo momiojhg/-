@@ -1,0 +1,11 @@
+I = imread('coins.png');
+J = imadd(I,50);
+K = imadd(I,100);
+L = imadd(I,-50);
+JX = imdivide(I,J);
+KX = imdivide(I,K);
+LX = imdivide(I,L);
+subplot(141),imshow(I);title('OP');
+subplot(142),imshow(JX,[]);title('I/imadd(I,50)');
+subplot(143),imshow(KX,[]);title('I/imadd(I,100');
+subplot(144),imshow(LX,[]);title('I/imadd(I,-50)');

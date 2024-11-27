@@ -1,0 +1,11 @@
+I = imread("pout.tif");
+J = imread("eight.tif");
+g1 = imhist(J);
+match = histeq(I, g1);
+figure;
+subplot(231), imshow(I), title('原图像');
+subplot(232), imshow(J), title('模板图像');
+subplot(233), imshow(match), title('规定化后的图像');
+subplot(234), imhist(I), title('原图像的直方图');
+subplot(235), imhist(J), title('模板图像的直方图');
+subplot(236), imhist(match), title('规定化后的图像的直方图');

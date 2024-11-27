@@ -1,0 +1,10 @@
+A = zeros(256);A(120:135,20:200)=1;
+B = zeros(256);B(100:160,80:140)=1;
+C = and(A,B);
+D = or(A,B);
+E = not(A);
+subplot(231),imshow(A);title('first binary P');
+subplot(232),imshow(B);title('second binary P');
+subplot(233),imshow(C);title('and');
+subplot(234),imshow(D);title('or');
+subplot(235),imshow(E);title('not');
